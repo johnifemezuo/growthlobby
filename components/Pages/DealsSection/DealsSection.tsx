@@ -9,7 +9,7 @@ import { DealPackageCard } from "./DealPackageCard";
 export const DealsSection = () => {
   return (
     <div
-      id="services"
+      id="packages"
       className="bg-[#082F34] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:pb-36 md:mt-5 relative lg:px-20"
     >
       <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44 text-white">

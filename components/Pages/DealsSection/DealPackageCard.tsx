@@ -28,15 +28,15 @@ export const DealPackageCard = () => (
       </div>
     </div>
 
-    <div className="bg-white px-4 md:px-6 py-4 md:py-9 space-y-5">
+    <div className="bg-white px-4 md:px-6 py-4 md:py-9 space-y-5 ">
       <div className="space-x-3 flex items-center">
-        <TickIcon /> <p>Production-ready web/app designs</p>
+        <TickIcon /> <p className="text-sm md:text-base">Production-ready web/app designs</p>
       </div>
       <div className="space-x-3 flex items-center">
-        <TickIcon /> <p>Production-ready web/app designs</p>
+        <TickIcon /> <p className="text-sm md:text-base">Production-ready web/app designs</p>
       </div>
       <div className="space-x-3 flex items-center">
-        <TickIcon /> <p>Production-ready web/app designs</p>
+        <TickIcon /> <p className="text-sm md:text-base">Production-ready web/app designs</p>
       </div>
 
       <button className="bg-black text-white rounded-full py-4 px-6 w-full text-cent">
