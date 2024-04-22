@@ -4,6 +4,7 @@ import { ServiceSection } from "./ServiceSection/ServiceSection";
 import { WorksSection } from "./WorksSection/WorksSection";
 import { DealsSection } from "./DealsSection/DealsSection";
 import { AboutSection } from "./AboutSection/AboutSection";
+import { FaqSection } from "./FaqSection/FaqSection";
 
 export const HomePageIndex = () => {
   return (
@@ -14,6 +15,7 @@ export const HomePageIndex = () => {
       <WorksSection />
       <DealsSection />
       <AboutSection />
+      <FaqSection />
       {/* about */}
       {/* faq */}
       {/* contact me */}
