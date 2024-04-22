@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const ServiceCard = ({title, tag, description, image, className}:{ title: string, tag: string, description: string, image: string; className?: string}) => (
-  <div className={`space-y-3 shadow-xl min-w-[350px] rounded-2xl bg-white p-4 md:p-6       overflow-hidden relative ${className}`}>
+  <div className={`space-y-3 shadow-xl md:min-w-[350px] rounded-2xl bg-white p-4 md:p-6       overflow-hidden relative ${className}`}>
     <Image
       src={image}
       width={350}
@@ -10,7 +10,7 @@ export const ServiceCard = ({title, tag, description, image, className}:{ title:
       alt=""
     />
 
-    <div className="pt-4 space-y-3">
+    <div className="pt-4 md:space-y-3 space-y-2 ">
       <span className="px-2 text-xs font-medium py-1 rounded-full border bg-[#EDF4EC]">
         {tag}
       </span>

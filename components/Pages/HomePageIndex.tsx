@@ -5,6 +5,7 @@ import { WorksSection } from "./WorksSection/WorksSection";
 import { DealsSection } from "./DealsSection/DealsSection";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { FaqSection } from "./FaqSection/FaqSection";
+import { ContactUs } from "./ContactUs/ContactUs";
 
 export const HomePageIndex = () => {
   return (
@@ -16,10 +17,7 @@ export const HomePageIndex = () => {
       <DealsSection />
       <AboutSection />
       <FaqSection />
-      {/* about */}
-      {/* faq */}
-      {/* contact me */}
-      {/* footer */}
+      <ContactUs />
     </div>
   );
 };

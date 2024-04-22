@@ -7,9 +7,9 @@ export const ServiceSection = () => {
   return (
     <div
       id="services"
-      className="bg-[#F3F3EC] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative"
+      className="bg-[#F3F3EC] pb-12 overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative"
     >
-      <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44">
+      <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl relative z-10 mx-auto lg:px-44">
         <p className="flex items-center space-x-2 justify-center">
           <PointIcon />
           <span className="text-base md:text-lg text-orange-600">

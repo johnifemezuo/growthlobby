@@ -11,7 +11,7 @@ export const HeroCard = ({image, label, className}:{image: string, label: string
             height={600}
           />
           <div className="bg-black/30 absolute inset-0" />
-          <span className="inline rounded-full bg-white py-2 px-4 absolute top-4 right-5">
+          <span className="inline rounded-full bg-white text-xs md:text-sm lg:text-base font-medium py-2 px-4 absolute top-4 right-5">
             {label}
           </span>
         </div>
