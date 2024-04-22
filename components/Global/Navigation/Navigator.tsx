@@ -29,8 +29,16 @@ const NavLink = ({
 
 export const Navigation = () => {
   const {pathname} = useRouter();
+  console.log(pathname);
+  
+  const router = useRouter();
+  const { hash } = router.query;
+
+  // Check if the hash exists in the current URL
+  const hashExists = hash && hash[0] === 'packages';
+  
   return (
-    <div className="hidden z-50 md:flex space-x-2 mx-auto bg-black/80 rounded-full py-3 max-w-[670px] px-3 items-center justify-between fixed bottom-8 inset-x-0">
+    <div className="hidden z-50 md:flex mx-auto bg-black/80 rounded-full py-3 max-w-[670px] px-3 items-center justify-between fixed bottom-8 inset-x-0">
       <Link href="/" className="-mb-1">
         <button
         >
@@ -38,10 +46,10 @@ export const Navigation = () => {
         </button>
       </Link>
 
-      <NavLink name="Intro" link="#intro" active={pathname === "#intro"} />
-      <NavLink name="services" link="#services" active={pathname === "#services"}/>
-      <NavLink name="works" link="#works" active={pathname === "#works"} />
-      <NavLink name="packages" link="#packages" active={pathname === "#packes"}/>
+      <NavLink name="Intro" link="/#intro" active={pathname === "#intro"} />
+      <NavLink name="services" link="/#services" active={pathname === "#services"}/>
+      <NavLink name="works" link="/#works" active={pathname === "#works"} />
+      <NavLink name="packages" link="/#packages" active={pathname === "#packages"}/>
       <NavLink name="about" link="#about" active={pathname === "#about"}/>
       <NavLink name="contact us" link="#contactus" active={pathname === "#intro"} />
     </div>
