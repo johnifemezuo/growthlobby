@@ -39,7 +39,7 @@ export const Navigation = () => {
   
   return (
     <div className="hidden z-50 md:flex mx-auto bg-black/80 rounded-full py-3 max-w-[670px] px-3 items-center justify-between fixed bottom-8 inset-x-0">
-      <Link href="/" className="-mb-1">
+      <Link href="/#hero" className="-mb-1">
         <button
         >
           <TabLogo />

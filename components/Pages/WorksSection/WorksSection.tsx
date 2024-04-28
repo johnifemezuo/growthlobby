@@ -2,6 +2,8 @@ import { PointIcon } from "@/components/Global/Icons/PointIcon";
 import Image from "next/image";
 import React from "react";
 import { WorkCard } from "./WorkCard";
+import Button from "@/components/Global/Button/Button";
+import Link from "next/link";
 
 export const WorksSection = () => {
   return (
@@ -34,6 +36,12 @@ We deliver exceptional quality for all.
         <WorkCard image="/images/img4.png" link="https://www.google.com" />
         <WorkCard image="/images/img2.png" link="https://www.google.com" />
       </div>
+
+<div className="w-full pt-8 xl:pt-12 justify-center grid">
+  <Link href={"/works"}>
+      <Button className="mt-6 inline-block " name="View all works" />
+  </Link>
+</div>
 
       
 

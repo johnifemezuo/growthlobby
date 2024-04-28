@@ -10,7 +10,7 @@ export const Layout = ({
   className?: string;
 }) => {
   return (
-    <div className={`p-4 max-w-[1500px] mx-auto relative ${className}`}>
+    <div className={`p-4 max-w-[1450px] mx-auto relative ${className}`}>
       <Header />
 
       {children}

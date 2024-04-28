@@ -1,14 +1,14 @@
-import { DownIcon } from "@/components/Global/Icons/DownIcon";
+import { faqsData } from "@/base/data/faqs";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
-import React from "react";
-import { Faq } from "./Faq";
 import Image from "next/image";
+import { BookACallCard } from "./BookACallCard";
+import { Faq } from "./Faq";
 
 export const FaqSection = () => {
   return (
     <div
       id="about"
-      className="bg-[#FAF8F4] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:py-20 md:mt-5 relative lg:px-9"
+      className="bg-[#FAF8F4] overflow-hidden rounded-3xl h-auto mt-6 py-12 px-4 md:p-8 lg:py-20 md:mt-5 relative lg:px-14 xl:px-20"
     >
       <div className="lg:flex lg:space-x-12 justify-between mx-auto relative z-10 ">
         <div className="space-y-4 relative lg:space-y-6   max-w-[600px] mx-aut text-white">
@@ -20,45 +20,31 @@ export const FaqSection = () => {
             Commonly asked questions
           </h1>
 
-          <div className="pt-4 space-y-4 lg:space-y-8 xl:pt-12 ">
-            <Faq
-              question="Why wouldn`t just hre a full-time designer?"
-              answer="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sit magnam eum."
-            />
-            <Faq
-              question="Is there a limit to how many requests I can have?"
-              answer="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sit magnam eum."
-            />
-            <Faq
-              question="Why wouldn`t just hre a full-time designer?"
-              answer="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sit magnam eum."
-            />
-            <Faq
-              question="Why wouldn`t just hre a full-time designer?"
-              answer="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sit magnam eum."
-            />
+          <div className="pt-4 space-y-4  xl:pt-12 ">
+            {faqsData.map((faq, ind: number) => (
+              <Faq key={ind} question={faq.question} answer={faq.answer} />
+            ))}
           </div>
         </div>
 
-        <div className="bg-white mt-12 shadow-xl relative overflow-hidden rounded-2xl px-5 py-12 lg:p-20 space-y-6 text-center lg:w-[500px] mx-auto">
-        <Image src="/images/rec8.png" className="w-12 md:w-[80px] absolute -bottom-1 left-0 " width={300} height={300} alt="phone" />
-        <Image src="/images/rec9.png" className="w-20 md:w-[80px] absolute -top-7 right-0 " width={300} height={300} alt="phone" />
-
-          <div className="rounded-full border-4 border-zinc-200 overflow-hidden w-24 h-24 lg:w-28 lg:h-28 mx-auto grid place-content-center">
-            <Image src="/images/phone.png" className="w-[80px] " width={300} height={300} alt="phone" />
-          </div>
-          <div className="space-y-5">
-            <h1 className="text-3xl font-semibold">Book a 15-minute intro call</h1>
-            <button className="bg-black text-white rounded-full py-4 px-6 w-full text-cent">
-              Book a call
-            </button>
-          </div>
-        </div>
+        <BookACallCard />
       </div>
 
-      <Image src="/images/rec11.png" className="w-20 lg:w-[140px] z-0 absolute -bottom-1 left-0 " width={300} height={300} alt="phone" />
+      <Image
+        src="/images/rec11.png"
+        className="w-20 lg:w-[140px] z-0 absolute -bottom-1 left-0 "
+        width={300}
+        height={300}
+        alt="phone"
+      />
 
-      <Image src="/images/rec10.png" className="w-24 md:w-[280px] absolute -bottom-1 right-0 " width={300} height={300} alt="phone" />
+      <Image
+        src="/images/rec10.png"
+        className="w-24 md:w-[280px] absolute -bottom-1 right-0 "
+        width={300}
+        height={300}
+        alt="phone"
+      />
     </div>
   );
 };

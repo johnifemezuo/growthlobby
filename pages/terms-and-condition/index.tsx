@@ -1,0 +1,37 @@
+import { Layout } from "@/components/Global/Layout/Layout";
+import { Header } from "@/components/Global/Navigation/Header";
+
+export default function TermsAndConditionPage()  {
+  return (
+    <Layout>
+      <div
+        id="about"
+        className="bg-[#FAF8F4] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:py-20 md:mt-5 relative lg:px-9"
+      >
+       <div className="max-w-6xl mx-auto">
+       <h1 className="text-3xl lg:text-4xl font-bold font-farro">Terms & Conditions</h1>
+        <p className="text-sm md:text-lg  mt-2">Last updated: 9/16/2023</p>
+        
+        <div className="mt-6">
+          <p>THIS TERMS OF USE AGREEMENT (the “Agreement”) constitutes a legally binding agreement by and between DESIGNJOY, LLC, a limited liability company organized under the laws of the state of Maryland (“DesignJoy”) and the client, whether personally or on behalf of an entity (“Client”), with regard to access and use of DesignJoy’s website: https://www.designjoy.co/ (the “Website”) and any other media form, channel, mobile website or mobile application related, linked or otherwise connected thereto. Failure to agree and adhere to all of the terms, conditions and obligations contained herein results in the express prohibition of the Client’s use of the Website, and the Client is ordered to discontinue use immediately. Thereafter the relationship between Client and DesignJoy shall cease and be of no further force and effect between the parties, except that any obligation of Client to pay DesignJoy for services rendered shall remain and continue to be an ongoing obligation owed by Client to DesignJoy.</p>
+        </div>
+
+        <h4 className="text-lg font-semibold py-2">1. Intellectual Property Rights</h4>
+        <p>Unless otherwise indicated, the Website is the property of DesignJoy and all source code, databases, functionality, software, website designs, audio, video, text, photographs and graphics of any nature and regardless of format (herein, collectively or individually, the “Content”) and the trademarks, service marks, and logos contained there (the “Marks”) are owned and controlled by DesignJoy and are protected by copyright and trademark laws and any other applicable intellectual property law or regulation of the United States, foreign jurisdictions and international conventions. The Content and Marks are provided “As-Is” for your information and personal use only. Except as expressly provided herein, no part of the Website and no Content may be copied, reproduced, aggregated, republished, uploaded, posted, displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without DesignJoy’s express prior written permission. DesignJoy reserves all rights in the Website, Content and Marks.</p>
+
+        <h4 className="text-lg font-semibold py-2">2. Ownership of Materials</h4>
+        <p>Notwithstanding DesignJoy’s ownership of Submissions, as described in Paragraph 4 (“Client Feedback”), all design and original source files created on Client’s behalf (“Projects”) belong to Client, and Client shall be the sole owner of the copyright for all Projects. In the event that any operation of law would cause DesignJoy to become the owner of a Project, in whole or in part, rather than Client, DesignJoy irrevocably and perpetually assigns its entire interest in the Project to Client, without limitation.Client warrants that any and all materials provided to DesignJoy as examples or as material to be incorporated into a project during the design process are owned by Client and do not infringe on or misappropriate any third party’s rights, including, but not limited to, all intellectual property rights and any right of publicity. DesignJoy always reserves the right to share the Client&apos;s design work public (social media, website, etc.) unless agreed upon as stated in section 18 of this document.</p>
+
+        <h4 className="text-lg font-semibold py-2">3. Third-Party Fonts</h4>
+        <p>In the event that any Project incorporates fonts that are not owned by DesignJoy and require a commercial license in order for Client to legally reproduce, distribute, or publicly display the Project (“Third-Party Font(s)”), DesignJoy will inform Client in writing that one or more Third-Party Fonts have been incorporated into the Project and that Client will need to purchase one or more licenses for the Third-Party Fonts from the rights-holder(s) of said Third Party Fonts in order to legally reproduce, distribute, or publicly display the Project. Said notice will include information sufficient for Client to identify which licenses are required and who to contact in order to purchase said licenses.So long as DesignJoy has informed Client of the incorporation of Third-Party Fonts as described above, Client assumes all responsibility for any consequences as a result of a failure by Client to purchase one or more licenses for any Third-Party Fonts incorporated into a Project.</p>
+
+        <h4 className="text-lg font-semibold py-2">4. User Representations</h4>
+        <p>By using the Website, Client represents and warrants that:Client has the legal capacity and agrees to comply with these Terms of Use;Client is not a minor in the jurisdiction of their domicile;Client will not access the Website through automated or non-human means;Client will not use the Website for any illegal or unauthorized purpose;Client’s use of the Website will not violate any applicable law or regulation.</p>
+
+        <h4 className="text-lg font-semibold py-2">5. Prohibited Activities</h4>
+        <p>Client shall not access or use the Website for any purpose other than that for which the Website is made available to the Client. The Website may not be used in connection with any commercial endeavors except those related to the work performed by DesignJoy on behalf of the Client. Further, Client agrees to refrain from the following:Make any unauthorized use of the Website;Retrieve data or content for the purposes of creating or compiling a database or directory;Circumvent, disable, or otherwise interfere with security-related features on the Website;Engage in unauthorized framing or linking of the Website;Trick, defraud or mislead DesignJoy or other users;Interfere with, disrupt or create an undue burden on the Website or DesignJoy’s networks or servers;Use the Website in an effort to compete with DesignJoy;Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Website;Bypass any measures on the Website designed to prevent or restrict access to the Website or any portion thereof;Harass, annoy, intimidate or threaten any of DesignJoy’s employees, independent contractors or agents providing services through the Website;Delete the copyright or other rights notice from any Content;Copy or adapt the Website’s softwareUpload or transmit, or attempt to do so, viruses, Trojan horses, or other material including anything that interferes with any party’s use of the Website or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operations or maintenance of the Website;Upload or transmit, or attempt to do so, any material that acts as a passive or active information collection or transmission mechanism;Disparage, tarnish or otherwise harm DesignJoy;Use the Website in a manner inconsistent with any applicable laws, statutes or regulations.</p>
+       </div>
+      </div>
+    </Layout>
+  );
+};

@@ -32,7 +32,7 @@ export const DealsSection = () => {
       <div className="grid xl:grid-cols-2 gap-4 md:gap-6 w-full xl:justify-center  mt-6 border-white/20 py-30 xl:space-x-20 mx-auto space-y-2  md:space-y-0 border-t ">
         <div className="relative">
           <div className="space-y-4 relative lg:space-y-6 py-12 md:py-14     lg:max-w-xl text-white">
-            <h1 className="text-2xl lg:max-w-xl md:text-3xl lg:text-4xl xl:text-5xl farro-bold relative">
+            <h1 className="text-2xl lg:max-w-xl md:text-3xl lg:text-4xl capitalize xl:text-5xl farro-bold relative">
               special service subscription
             </h1>
 

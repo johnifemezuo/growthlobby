@@ -8,6 +8,8 @@ import { LinkedinIcon } from "@/components/Global/Icons/LinkedinIcon";
 import { InstagramIcon } from "@/components/Global/Icons/InstagramIcon";
 import { FacebookIcon } from "@/components/Global/Icons/FacebookIcon";
 import { WhatsappIcon } from "@/components/Global/Icons/WhatsappIcon";
+import { BehanceIcon } from "@/components/Global/Icons/BehanceIcon";
+import { DribbbleIcon } from "@/components/Global/Icons/DribbbleIcon";
 
 export const AboutSection = () => {
   return (
@@ -16,7 +18,7 @@ export const AboutSection = () => {
       className="bg-[#151212] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:py-20 md:mt-5 relative lg:px-20"
     >
       <div className="xl:flex md:space-y-12 lg:py-0 gap-5 md:gap-20">
-        <div className="xl:max-w-[500px] ">
+        <div className="xl:max-w-[400px] ">
           <div className="space-y-4 relative lg:space-y-6    text-white">
             <p className="flex items-center space-x-2 ">
               <PointIcon />
@@ -60,15 +62,15 @@ export const AboutSection = () => {
               <p className="md:text-lg lg:text-2xl">Linkedin</p>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/john-femezuo"
+              href="https://www.behance.net/johnifem"
               className="bg-white/10 space-y-4 p-4 rounded-2xl text-white  hover:bg-white/20 duration-300 transition-all"
               target="_blank"
             >
-              <FacebookIcon />
-              <p className="md:text-lg lg:text-2xl">Facebook</p>
+              <BehanceIcon className="w-8 h-8" />
+              <p className="md:text-lg lg:text-2xl">Behance</p>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/john-femezuo"
+              href="https://www.instagram.com/john_ifemezuo/"
               className="bg-white/10 space-y-4 p-4 rounded-2xl text-white  hover:bg-white/20 duration-300 transition-all"
               target="_blank"
             >
@@ -76,12 +78,12 @@ export const AboutSection = () => {
               <p className="md:text-lg lg:text-2xl">Instagram</p>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/john-femezuo"
+              href="https://dribbble.com/ifemezuo"
               className="bg-white/10 space-y-4 p-4 rounded-2xl text-white  hover:bg-white/20 duration-300 transition-all"
               target="_blank"
             >
-              <WhatsappIcon />
-              <p className="md:text-lg lg:text-2xl">Whatsapp</p>
+              <DribbbleIcon className="w-8 h-8" />
+              <p className="md:text-lg lg:text-2xl">Dribbble</p>
             </Link>
           </div>
         </div>
