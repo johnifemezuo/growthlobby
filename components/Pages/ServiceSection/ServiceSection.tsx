@@ -21,7 +21,7 @@ export const ServiceSection = () => {
         </h1>
 
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
-          your go-to solution for web and mobile apps, like many founders,
+          Your go-to solution for your web and mobile apps design needs, like many founders,
           startups, and agencies do
         </p>
       </div>
@@ -29,8 +29,8 @@ export const ServiceSection = () => {
       <div className="grid  gap-4 md:gap-6  xl:grid-cols-3 py-30  lg:max-w-[1300px] mx-auto ">
         <ServiceCard
           tag="Prototype"
-          title="Web Design"
-          description="We design sleek and responsive web apps for any business challenge."
+          title="Website Design"
+          description="We design sleek and user friendly websites for any need using figma."
           image="/images/serv1.png"
           className="xl:-rotate-[15deg]"
         />
@@ -43,7 +43,7 @@ export const ServiceSection = () => {
         />
         <ServiceCard
           tag="Prototype"
-          title="Web Development"
+          title="Website Development"
           description="We build all kind of  sleek  and responsive website for any business challenge."
           image="/images/serv3.png"
           className="xl:rotate-[15deg]"
@@ -55,7 +55,7 @@ export const ServiceSection = () => {
         <ServiceCard
           tag="Development"
           title="Mobile development"
-          description="We also build the  front end  of the mobile app design."
+          description="We also build the  front end  of the mobile app designs."
           image="/images/serv4.png"
           className=" xl:-rotate-[15deg]"
         />
@@ -63,8 +63,8 @@ export const ServiceSection = () => {
         <ServiceCard
           tag="Development"
           title="Web apps."
-          description="We design sleek and responsive web apps for any business challenge."
-          image="/images/serv1.png"
+          description="We design and build any kind of responsive web apps for any business challenge."
+          image="/images/img12.png"
           className="xl:rotate-[15deg]"
         />
       </div>

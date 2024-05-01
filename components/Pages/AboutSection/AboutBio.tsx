@@ -31,7 +31,7 @@ export const AboutBio = () => {
           </p>
           <p>
             What makes me different? I&apos;m really passionate. I love to
-            design and build. I care a lot about doing meaningful work with my
+            design and build beautiful things that are usable and can generate revenue. I care a lot about doing meaningful work with my
             clients. If you want someone you can trust and someone who always
             puts your needs first, and build long-lasting relationships. I
             believe you’ve enough reasons to work with me.

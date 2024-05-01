@@ -1,9 +1,8 @@
+import Button from "@/components/Global/Button/Button";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
 import Image from "next/image";
-import React from "react";
-import { WorkCard } from "./WorkCard";
-import Button from "@/components/Global/Button/Button";
 import Link from "next/link";
+import { WorkCard } from "./WorkCard";
 
 export const WorksSection = () => {
   return (
@@ -19,31 +18,68 @@ export const WorksSection = () => {
           </span>
         </p>
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl farro-bold relative">
-        Selected work
+          Selected work
         </h1>
 
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
-        Whether it&apos;s a vibrant website or a minimal mobile app you seek.
-We deliver exceptional quality for all.
+          Whether it&apos;s a vibrant website or a minimal mobile app you seek.
+          We deliver exceptional quality for all.
         </p>
       </div>
 
       <div className="grid gap-4 md:gap-6 md:grid-cols-2  xl:grid-cols-3 py-30  xl:px-28">
-        <WorkCard image="/images/img1.png" link="https://www.google.com" />
-        <WorkCard image="/images/img3.png" link="https://www.google.com" />
-        <WorkCard image="/images/img4.png" link="https://www.google.com" />
-        <WorkCard image="/images/img5.png" link="https://www.google.com" />
-        <WorkCard image="/images/img4.png" link="https://www.google.com" />
-        <WorkCard image="/images/img2.png" link="https://www.google.com" />
+        <WorkCard
+          title="Rendlr.com"
+          tags={["UI/UX Design", "Prototype"]}
+          image="/images/rendlr.png"
+          link="https://www.rendlr.com"
+        />
+        <WorkCard
+          title="Ventlio"
+          tags={["UI/UX Design", "Development"]}
+          image="/images/ventlio.jpg"
+          link="https://www.ventlio.vercel.app"
+        />
+        <WorkCard
+          title="Portfolio"
+          tags={["UI/UX Design", "Prototype", "Development"]}
+          image="/images/portfolio.png"
+          link="https://www.johnifemezuo.vercel.app"
+        />
+        <WorkCard
+          title="Dating App"
+          tags={["UI/UX Design", "App Design", "Prototype"]}
+          image="/images/moonlights.png"
+          link="https://johnifemezuo.vercel.app/work/moonlight"
+        />
+        <WorkCard
+          title="Moonlight Dating app"
+          tags={["UI/UX Design", "App  design", "Prototype"]}
+          image="/images/rendlrs.png"
+          link="https://www.behance.net/gallery/183368231/Rendlr-Dating-App"
+        />
+
+        <Link href="" target="_blank">
+          <div className="rounded-2xl relative overflow-hidden group h-[250px] md:h-[350px] bg-red-50">
+            <Image
+              src={"/images/design project.png"}
+              alt=""
+              width={700}
+              height={700}
+              className="w-full h-full  transition-all "
+            />
+
+            <div className="z-30 absolute bottom-0  space-y-3 duration-500 transition-all grid place-content-center justify-center items-center w-full h-full p-4 ">
+              <h1 className="text-white text-2xl text-center">
+                All Design Projects
+              </h1>
+              <button className="bg-white hover:bg-white/80  transition-all duration-300  text-black rounded-full font-medium  py-4 px-6 hover:shadow-xl">
+                See All
+              </button>
+            </div>
+          </div>
+        </Link>
       </div>
-
-<div className="w-full pt-8 xl:pt-12 justify-center grid">
-  <Link href={"/works"}>
-      <Button className="mt-6 inline-block " name="View all works" />
-  </Link>
-</div>
-
-      
 
       <Image
         src="/images/rec6.png"

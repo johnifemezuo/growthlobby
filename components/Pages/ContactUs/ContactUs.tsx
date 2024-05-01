@@ -21,30 +21,39 @@ export const ContactUs = () => {
           Lets talk about that great idea or project
         </h1>
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap lg:w-[1300px]  mx-auto justify-center lg:justify-between items-center space-x-2 md:space-x-3  gap-4">
+      <div className="flex flex-wrap lg:w-[800px]  mx-auto justify-center lg:justify-between items-center space-x-2 md:space-x-3  gap-4">
         <button className="f bg-[#C6EC59] text-sm md:text-base text-black rounded-full py-3 px-5 font-medium ">
-          Landing design
+          Landing page
         </button>
         <button className="bg-[#4ED374] text-xs md:text-base text-black rounded-full py-3 px-5 font-medium   text-cent">
-          Framer
+          E-commerce
         </button>
         <button className="bg-[#A359EC] text-xs md:text-base text-white rounded-full py-3 px-5 font-medium   text-cent">
-          Wix
+          Corporate site
         </button>{" "}
         <button className="inline text-xs md:text-base bg-[#C6EC59] text-black rounded-full py-3 px-5 font-medium   text-cent">
-          Mobile Design
+          Government Site
         </button>
         <button className="inline text-xs md:text-base bg-[#EC59B1] text-white rounded-full py-3 px-5 font-medium text-cent">
-          Website design
+          Portfolio site
         </button>
         <button className="inline text-xs md:text-base bg-[#ECA959] text-black rounded-full py-3 px-5 font-medium  text-cent">
-          Animations
+          Entertainment site
         </button>
         <button className="inline text-xs md:text-base bg-[#59B7EC] text-black rounded-full py-3 px-5 font-medium  text-cent">
-          website design
+          Listing sites
         </button>
         <button className="inline bg-[#5971EC] text-xs md:text-base text-white rounded-full py-3 px-5 font-medium  text-cent">
-          Front end
+          Review site
+        </button>
+        <button className="inline text-xs md:text-base bg-[#EC59B1] text-white rounded-full py-3 px-5 font-medium text-cent">
+          Personal site
+        </button>
+        <button className="inline bg-[#5971EC] text-xs md:text-base text-white rounded-full py-3 px-5 font-medium  text-cent">
+          Business site
+        </button>
+        <button className="inline bg-[#5971EC] text-xs md:text-base text-white rounded-full py-3 px-5 font-medium  text-cent">
+          Social media app
         </button>
       </div>
 

@@ -29,7 +29,7 @@ export const faqsData = [
     },
     {
         question: "What programs do you design in?",
-        answer: "As a designer that codes, most requests are designed using Figma. I also use no-code tools like framer to build my designs."
+        answer: "As a designer that codes, most design requests are designed using Figma. I also use no-code tools like framer to build my designs faster. I can also build the site from scratch using the latest front end technologies."
     },
     {
         question: "How do I request designs?",

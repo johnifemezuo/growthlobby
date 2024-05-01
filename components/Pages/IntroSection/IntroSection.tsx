@@ -19,7 +19,7 @@ export const IntroSection = () => {
           It&apos;s simple. You request, we design or build, Together!
         </p>
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
-          We begin each project by attentively li stening to grasp your
+          We begin each project by attentively listening to grasp your
           requirements. After that, we divide your project into specific,
           manageable tasks. This method guarantees that every task gets the
           focus, time, and care it needs.
@@ -39,7 +39,7 @@ export const IntroSection = () => {
           <h3 className="text-xl md:text-2xl font-semibold">
             Individual/Freelance
           </h3>
-          <p className="text-zinc-600">
+          <p className="text-zinc-600 font-medium">
             Do you want to grow you business, need a website, an app design,
             flayer grow online?. Would like to collaborate on a project? We got
             your back.
@@ -56,9 +56,9 @@ export const IntroSection = () => {
           />
 
           <h3 className="text-xl md:text-2xl font-semibold">Agency</h3>
-          <p className="text-zinc-600">
+          <p className="text-zinc-600 font-medium">
             Do you need a designer or front end developer for a contract term to
-            help you team reach the company goal?. You found us..
+            help your team reach their goal?. Well, You found us..
           </p>
         </div>
 
@@ -72,9 +72,8 @@ export const IntroSection = () => {
           />
 
           <h3 className="text-xl md:text-2xl font-semibold">Company</h3>
-          <p className="text-zinc-600">
-            Do you want to grow you business, need a website, an app design,
-            flayer grow online. We got your back.
+          <p className="text-zinc-600 font-medium">
+            Do you need a professional designer for a contract base to help your company reach their goal?. Well, You found us..
           </p>
         </div>
       </div>

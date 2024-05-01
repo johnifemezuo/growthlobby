@@ -37,8 +37,7 @@ export const DealsSection = () => {
             </h1>
 
             <p className="text-base md:text-lg text-white font-medium font-manrope">
-              If you are interested in a more long term contract. you can feel
-              free to choose our plan or reach out to us.
+              We have curated several packages that may suit your needs. You can as well reach out to us for more info.
             </p>
           </div>
 
