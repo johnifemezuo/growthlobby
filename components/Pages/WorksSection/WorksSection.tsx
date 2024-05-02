@@ -53,7 +53,7 @@ export const WorksSection = () => {
           link="https://johnifemezuo.vercel.app/work/moonlight"
         />
         <WorkCard
-          title="Moonlight Dating app"
+          title="Rendlr Dating app"
           tags={["UI/UX Design", "App  design", "Prototype"]}
           image="/images/rendlrs.png"
           link="https://www.behance.net/gallery/183368231/Rendlr-Dating-App"

@@ -28,7 +28,7 @@ export const DealPackageCard = () => (
       </div>
     </div>
 
-    <div className="bg-white px-4 md:px-6 py-4 md:py-6 space-y-5 rounded-tl-3xl rounded-tr-3xl">
+    <div className="bg-white px-4 md:px-6 py-4 md:py-6 space-y-2 rounded-tl-3xl rounded-tr-3xl">
       <p className="font-medium ">Whats Included</p>
       <div className="space-x-3 flex items-center">
         <TickIcon />{" "}

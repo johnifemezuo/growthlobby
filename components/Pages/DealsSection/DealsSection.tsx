@@ -1,16 +1,15 @@
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
-import { TickIcon } from "@/components/Global/Icons/TickIcon";
 import Image from "next/image";
-import { DealList } from "./DealList";
-import { DealLists } from "./DealLists";
 import { DealContact } from "./DealContact";
+import { DealLists } from "./DealLists";
 import { DealPackageCard } from "./DealPackageCard";
+import { Testimonials } from "./Testimonials/Testimonials";
 
 export const DealsSection = () => {
   return (
     <div
       id="packages"
-      className="bg-[#082F34] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:pb-36 md:mt-5 relative lg:px-20"
+      className="bg-[#083433] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:pb-36 md:mt-5 relative lg:px-20"
     >
       <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44 text-white">
         <p className="flex items-center space-x-2 justify-center">
@@ -37,7 +36,8 @@ export const DealsSection = () => {
             </h1>
 
             <p className="text-base md:text-lg text-white font-medium font-manrope">
-              We have curated several packages that may suit your needs. You can as well reach out to us for more info.
+              We have curated several packages that may suit your needs. You can
+              as well reach out to us for more info.
             </p>
           </div>
 
@@ -56,6 +56,9 @@ export const DealsSection = () => {
       </div>
 
       <DealContact />
+
+
+      <Testimonials />
 
       <Image
         src="/images/rec13.png"

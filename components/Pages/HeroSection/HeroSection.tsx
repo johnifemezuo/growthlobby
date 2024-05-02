@@ -99,28 +99,28 @@ export const HeroSection = () => {
       <div className="overflow-x-auto md:overflow-x-hidden">
         <div className="flex items-center space-x-4 md:space-x-3 p-3 md:p-8 w-[1200px] lg:w-[1600px] ">
           <HeroCard
-            image="/images/img1.png"
-            label="Design"
+            image="/images/pd.png"
+            label="App design"
             className="w-[380px]"
           />
           <HeroCard
-            image="/images/img2.png"
-            label="Design"
+            image="/images/dev.jpg"
+            label="Development"
             className="w-[260px]"
           />
           <HeroCard
             image="/images/img3.png"
-            label="Design"
+            label="Mockups"
             className="w-[380px]"
           />
           <HeroCard
-            image="/images/img4.png"
-            label="Design"
+            image="/images/framer.jpg"
+            label="Framer"
             className="w-[380px]"
           />
           <HeroCard
             image="/images/img5.png"
-            label="Design"
+            label="App Design"
             className="w-[380px]"
           />
         </div>

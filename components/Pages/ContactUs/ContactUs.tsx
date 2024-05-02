@@ -22,7 +22,7 @@ export const ContactUs = () => {
         </h1>
       </div>
       <div className="flex flex-wrap lg:w-[800px]  mx-auto justify-center lg:justify-between items-center space-x-2 md:space-x-3  gap-4">
-        <button className="f bg-[#C6EC59] text-sm md:text-base text-black rounded-full py-3 px-5 font-medium ">
+        <button className=" bg-[#C6EC59] text-sm md:text-base text-black rounded-full py-3 px-5 font-medium ">
           Landing page
         </button>
         <button className="bg-[#4ED374] text-xs md:text-base text-black rounded-full py-3 px-5 font-medium   text-cent">

@@ -17,7 +17,7 @@ export const AboutBio = () => {
           <h1>Dear</h1>
         </div>
 
-        <div className="text-zinc-300 leading-8 md:text-lg font-medium space-y-4">
+        <div className="text-zinc-300 leading-6 md:leading-8 md:text-lg font-medium space-y-4">
           <p>
             I’m John Ifemezuo, an independent designer and developer living in
             Nigeria. I have 5+ years of experience in the tech industry. I help
