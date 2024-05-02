@@ -59,7 +59,7 @@ export const WorksSection = () => {
           link="https://www.behance.net/gallery/183368231/Rendlr-Dating-App"
         />
 
-        <Link href="" target="_blank">
+        <Link href="https://www.figma.com/proto/ZUPoSez0NQptvd2eXIL8mY/Growthlobby-Projects?page-id=0%3A1&type=design&node-id=10-2&viewport=742%2C292%2C0.03&t=xEs3sqar595CAJ5Q-1&scaling=min-zoom&starting-point-node-id=10%3A2&mode=design" target="_blank">
           <div className="rounded-2xl relative overflow-hidden group h-[250px] md:h-[350px] bg-red-50">
             <Image
               src={"/images/design project.png"}
@@ -73,6 +73,7 @@ export const WorksSection = () => {
               <h1 className="text-white text-2xl text-center">
                 All Design Projects
               </h1>
+
               <button className="bg-white hover:bg-white/80  transition-all duration-300  text-black rounded-full font-medium  py-4 px-6 hover:shadow-xl">
                 See All
               </button>
