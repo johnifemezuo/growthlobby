@@ -10,7 +10,7 @@ const NavLink = ({ name, link }: { name: string; link: string }) => {
       spy={true}
       smooth={true}
       duration={500}
-      className="capitalize w-[180px] md:w-auto text-sm block text-white cursor-pointer md:ml-0 rounded-3xl py-2.5 md:py-2 px-4  transition-all duration-300"
+      className=" w-[180px] font-manrope md:w-auto text-base md:text-sm  block text-white cursor-pointer md:ml-0 rounded-3xl py-2.5 md:py-2 px-4  transition-all duration-300"
       activeClass="bg-white/30"
     >
       {name}
@@ -30,7 +30,7 @@ export const Navigation = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } items-center justify-between block  md:flex md:space-y-0 space-y-1 pt-2 md:pt-0`}
+        } items-center justify-between block  md:flex md:space-y-0 space-y-1 pt-2 md:pt-0 mb-2 md:mb-0`}
       >
         <ScrollLink
           to="hero"
@@ -55,7 +55,7 @@ export const Navigation = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white w-8 h-8 md:hidden px-1 mt-3"
+        className="text-white w-8 h-8 md:hidden px-1 mt-1"
       >
         {isOpen ? (
           <svg
