@@ -13,8 +13,8 @@ export const DealContact = () => (
     </div>
 
     <Link
-      href="https://cal.com/john-ifemezuo/15min"
-    target="_blank"
+      href="https://cal.com/growthlobby/15min"
+      target="_blank"
       className="inline-block"
     >
       <button className=" min-w-[150px] space-x-4 bg-white hover:bg-black hover:text-white transition-all duration-300 text-black rounded-full py-4 px-8 font-medium  text-cent">

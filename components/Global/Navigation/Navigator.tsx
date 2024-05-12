@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { TabLogo } from "../Icons/TabLogo";

@@ -98,7 +98,7 @@ export const ContactUs = () => {
         className="mt-10 relative  z-20 pb-8 md:pb-20 lg:mt-28 max-w-2xl mx-auto grid md:grid-cols-2 gap-3 md:gap-5"
       >
         <Link
-          href="mailto:ifemezuojohn@gmail.com?subject=Website%20Inquiry&body=Hello%2C%20I%20found%20your%20contact%20on%20your%20website"
+          href="mailto:growthlobbyagency@gmail.com?subject=Project%20Inquiry&body=Hello%2C%20I%20found%20your%20contact%20on%20your%20website"
           target="_blank"
         >
           <button className="justify-center lg:space-x-8 bg-black text-lg  text-white rounded-full py-3 lg:py-4 px-6 w-full inline-flex items-center space-x-3 text-cent">

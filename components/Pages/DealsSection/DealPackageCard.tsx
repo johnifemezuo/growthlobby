@@ -32,8 +32,7 @@ export const DealPackageCard = () => (
       <p className="font-medium ">Whats Included</p>
       <div className="space-x-3 flex items-center">
         <TickIcon />{" "}
-        <p className="text-sm md:text-base">Production-ready web/app designs
-</p>
+        <p className="text-sm md:text-base">Production-ready web/app designs</p>
       </div>
       <div className="space-x-3 flex items-center">
         <TickIcon />{" "}
@@ -56,8 +55,7 @@ export const DealPackageCard = () => (
         <p className="text-sm md:text-base">1:1 async communication</p>
       </div>
       <div className="space-x-3 flex items-center">
-        <TickIcon />{" "}
-        <p className="text-sm md:text-base">Project Update</p>
+        <TickIcon /> <p className="text-sm md:text-base">Project Update</p>
       </div>
       <div className="space-x-3 flex items-center">
         <TickIcon /> <p className="text-sm md:text-base">Framer development</p>
@@ -78,7 +76,7 @@ export const DealPackageCard = () => (
       </div>
 
       <Link
-        href="https://cal.com/john-ifemezuo/15min"
+        href="https://cal.com/growthlobby/15min"
         target="_blank"
         className="pt-4 inline-block w-full"
       >

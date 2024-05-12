@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Growthlobby : Digital solution for your business or project{" "}
+          Growthlobby : Digital solution for your business or project
         </title>
         <meta
           name="description"
-          content="Growthlobby Website design and development agency"
+          content="Growthlobby : A software/website/mobile frontend design and development agency."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
