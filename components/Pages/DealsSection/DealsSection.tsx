@@ -83,6 +83,9 @@ export const DealsSection = () => {
         <Testimonials />
       </motion.div>
 
+      <div className="py-6" />
+
+
       <Image
         src="/images/rec13.png"
         alt=""

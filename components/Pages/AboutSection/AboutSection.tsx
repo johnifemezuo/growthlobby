@@ -16,7 +16,7 @@ export const AboutSection = () => {
     <div
       ref={ref}
       id="about"
-      className="bg-[#151212] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:py-20 md:mt-5 relative lg:px-20"
+      className="bg-[#151212] overflow-hidden rounded-3xl min-h-screen py-12 mt-6 px-5 md:p-8 lg:py-20 md:mt-5 relative lg:px-20"
     >
       <div className="xl:flex md:space-y-12 lg:py-0 gap-5 md:gap-20">
         <motion.div

@@ -56,6 +56,7 @@ export const FaqSection = () => {
         height={300}
         alt="phone"
       />
+
     </div>
   );
 };
