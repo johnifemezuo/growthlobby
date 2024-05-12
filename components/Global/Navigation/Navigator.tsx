@@ -3,13 +3,7 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { TabLogo } from "../Icons/TabLogo";
 
-const NavLink = ({
-  name,
-  link,
-}: {
-  name: string;
-  link: string;
-}) => {
+const NavLink = ({ name, link }: { name: string; link: string }) => {
   return (
     <ScrollLink
       to={link}
@@ -25,12 +19,6 @@ const NavLink = ({
 };
 
 export const Navigation = () => {
-  const { pathname } = useRouter();
-
-  const router = useRouter();
-  const { hash } = router.query;
-
-  // Check if the hash exists in the current URL
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -57,21 +45,12 @@ export const Navigation = () => {
           </button>
         </ScrollLink>
 
-        <NavLink name="Intro" link="intro"  />
-        <NavLink
-          name="services"
-          link="services"
-        />
-        <NavLink name="works" link="works"  />
-        <NavLink
-          name="packages"
-          link="packages"
-        />
-        <NavLink name="about" link="about"  />
-        <NavLink
-          name="contact us"
-          link="contactus"
-        />
+        <NavLink name="Intro" link="intro" />
+        <NavLink name="services" link="services" />
+        <NavLink name="works" link="works" />
+        <NavLink name="packages" link="packages" />
+        <NavLink name="about" link="about" />
+        <NavLink name="contact us" link="contactus" />
       </div>
 
       <button
