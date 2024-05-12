@@ -1,16 +1,26 @@
-import Button from "@/components/Global/Button/Button";
+import { useAnimateEase } from "@/base/utils/useAnimateEase";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { WorkCard } from "./WorkCard";
 
 export const WorksSection = () => {
+  const { ref, easeInVariant, mainControls } = useAnimateEase();
+
   return (
     <div
+      ref={ref}
       id="works"
       className="bg-[#F2F5FC] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative"
     >
-      <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44"
+      >
         <p className="flex items-center space-x-2 justify-center">
           <PointIcon />
           <span className="text-base md:text-lg text-orange-600">
@@ -25,9 +35,15 @@ export const WorksSection = () => {
           Whether it&apos;s a vibrant website or a minimal mobile app you seek.
           We deliver exceptional quality for all.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid gap-4 md:gap-6 md:grid-cols-2  xl:grid-cols-3 py-30  xl:px-28">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 1, delay: 0.8 }}
+        className="grid gap-4 md:gap-6 md:grid-cols-2  xl:grid-cols-3 py-30  xl:px-28"
+      >
         <WorkCard
           title="Rendlr.com"
           tags={["UI/UX Design", "Prototype"]}
@@ -59,7 +75,10 @@ export const WorksSection = () => {
           link="https://www.behance.net/gallery/183368231/Rendlr-Dating-App"
         />
 
-        <Link href="https://www.figma.com/proto/ZUPoSez0NQptvd2eXIL8mY/Growthlobby-Projects?page-id=0%3A1&type=design&node-id=10-2&viewport=742%2C292%2C0.03&t=xEs3sqar595CAJ5Q-1&scaling=min-zoom&starting-point-node-id=10%3A2&mode=design" target="_blank">
+        <Link
+          href="https://www.figma.com/proto/ZUPoSez0NQptvd2eXIL8mY/Growthlobby-Projects?page-id=0%3A1&type=design&node-id=10-2&viewport=742%2C292%2C0.03&t=xEs3sqar595CAJ5Q-1&scaling=min-zoom&starting-point-node-id=10%3A2&mode=design"
+          target="_blank"
+        >
           <div className="rounded-2xl relative overflow-hidden group h-[250px] md:h-[350px] bg-red-50">
             <Image
               src={"/images/design project.png"}
@@ -80,7 +99,7 @@ export const WorksSection = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </motion.div>
 
       <Image
         src="/images/rec6.png"

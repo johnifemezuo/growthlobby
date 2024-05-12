@@ -1,24 +1,31 @@
-import CurvyIcon from "@/components/Global/Icons/CurvyIcon";
-import { PointIcon } from "@/components/Global/Icons/PointIcon";
-import Image from "next/image";
-import React from "react";
-import { AboutBio } from "./AboutBio";
-import Link from "next/link";
-import { LinkedinIcon } from "@/components/Global/Icons/LinkedinIcon";
-import { InstagramIcon } from "@/components/Global/Icons/InstagramIcon";
-import { FacebookIcon } from "@/components/Global/Icons/FacebookIcon";
-import { WhatsappIcon } from "@/components/Global/Icons/WhatsappIcon";
+import { useAnimateEase } from "@/base/utils/useAnimateEase";
 import { BehanceIcon } from "@/components/Global/Icons/BehanceIcon";
+import CurvyIcon from "@/components/Global/Icons/CurvyIcon";
 import { DribbbleIcon } from "@/components/Global/Icons/DribbbleIcon";
+import { InstagramIcon } from "@/components/Global/Icons/InstagramIcon";
+import { LinkedinIcon } from "@/components/Global/Icons/LinkedinIcon";
+import { PointIcon } from "@/components/Global/Icons/PointIcon";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { AboutBio } from "./AboutBio";
 
 export const AboutSection = () => {
+  const { ref, easeInVariant, mainControls } = useAnimateEase();
+
   return (
     <div
+      ref={ref}
       id="about"
       className="bg-[#151212] overflow-hidden rounded-3xl min-h-screen mt-6 p-5 md:p-8 lg:py-20 md:mt-5 relative lg:px-20"
     >
       <div className="xl:flex md:space-y-12 lg:py-0 gap-5 md:gap-20">
-        <div className="xl:max-w-[400px] ">
+        <motion.div
+          variants={easeInVariant}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="xl:max-w-[400px] "
+        >
           <div className="space-y-4 relative lg:space-y-6    text-white">
             <p className="flex items-center space-x-2 ">
               <PointIcon />
@@ -86,9 +93,16 @@ export const AboutSection = () => {
               <p className="md:text-lg lg:text-2xl">Dribbble</p>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <AboutBio />
+        <motion.div
+          variants={easeInVariant}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <AboutBio />
+        </motion.div>
       </div>
     </div>
   );

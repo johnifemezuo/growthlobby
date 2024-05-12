@@ -1,15 +1,24 @@
+import { useAnimateEase } from "@/base/utils/useAnimateEase";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 import { ServiceCard } from "./ServiceCard";
-
 export const ServiceSection = () => {
+  const { ref, easeInVariant, mainControls } = useAnimateEase();
+
   return (
     <div
+      ref={ref}
       id="services"
       className="bg-[#F3F3EC] pb-12 overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative"
     >
-      <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl relative z-10 mx-auto lg:px-44">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl relative z-10 mx-auto lg:px-44"
+      >
         <p className="flex items-center space-x-2 justify-center">
           <PointIcon />
           <span className="text-base md:text-lg text-orange-600">
@@ -21,12 +30,17 @@ export const ServiceSection = () => {
         </h1>
 
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
-          Your go-to solution for your web and mobile apps design needs, like many founders,
-          startups, and agencies do
+          Your go-to solution for your web and mobile apps design needs, like
+          many founders, startups, and agencies do
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid  gap-4 md:gap-6  xl:grid-cols-3 py-30  lg:max-w-[1300px] mx-auto ">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="grid  gap-4 md:gap-6  xl:grid-cols-3 py-30  lg:max-w-[1300px] mx-auto ">
         <ServiceCard
           tag="Prototype"
           title="Website Design"
@@ -48,10 +62,13 @@ export const ServiceSection = () => {
           image="/images/serv3.png"
           className="xl:rotate-[15deg]"
         />
-      </div>
+      </motion.div>
 
-      
-      <div className="grid xl:flex gap-4 md:gap-6 w-full xl:justify-center  mt-6 xl:max-w-4xl xl:mt-28 py-30 xl:space-x-20 mx-auto space-y-2  md:space-y-0">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.7, delay: 0.9 }} className="grid xl:flex gap-4 md:gap-6 w-full xl:justify-center  mt-6 xl:max-w-4xl xl:mt-28 py-30 xl:space-x-20 mx-auto space-y-2  md:space-y-0">
         <ServiceCard
           tag="Development"
           title="Mobile development"
@@ -59,7 +76,7 @@ export const ServiceSection = () => {
           image="/images/serv4.png"
           className=" xl:-rotate-[15deg]"
         />
-      
+
         <ServiceCard
           tag="Development"
           title="Web apps."
@@ -67,7 +84,7 @@ export const ServiceSection = () => {
           image="/images/img12.png"
           className="xl:rotate-[15deg]"
         />
-      </div>
+      </motion.div>
 
       <Image
         src="/images/rec3.png"

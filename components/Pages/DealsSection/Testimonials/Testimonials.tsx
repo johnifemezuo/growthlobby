@@ -35,8 +35,8 @@ export const Testimonials = () => {
   }, [currentIndex]);
 
   return (
-    <div className="flex flex-col w-full items-center space-y-4 mt-20">
-      <h1 className="text-xl  xl:text-3xl farro-bold relative text-white mb-5">
+    <div className="flex flex-col w-full items-center mt-20">
+      <h1 className="text-xl  xl:text-3xl farro-bold relative text-white ">
         What our clients have to say
       </h1>
 
@@ -52,7 +52,7 @@ export const Testimonials = () => {
               message={testimony.message}
               name={testimony.name}
               profilePics={testimony.profilePics}
-            />
+            />``
           </div>
         ))}
       </div>

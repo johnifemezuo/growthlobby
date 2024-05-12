@@ -1,18 +1,33 @@
+import { useAnimateEase } from "@/base/utils/useAnimateEase";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 export const IntroSection = () => {
+  const { ref, easeInVariant, mainControls } = useAnimateEase();
+
   return (
-    <div id="intro" className="bg-[#F8F3F2] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative">
-      <div className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44">
+    <div
+      ref={ref}
+      id="intro"
+      className="bg-[#F8F3F2] overflow-hidden rounded-3xl min-h-screen mt-6 p-4 md:p-8 lg:pb-36 md:mt-5 relative"
+    >
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.9, delay: 0.3 }}
+        className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl mx-auto lg:px-44"
+      >
         <p className="flex items-center space-x-2 justify-center">
           <PointIcon />
           <span className="text-base md:text-lg text-orange-600">
             Who is it for
           </span>
         </p>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl farro-bold relative">
+        <h1
+          className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl farro-bold relative"
+        >
           Basically Everyone who needs to grow their business, team or agency
         </h1>
         <p className="text-base md:text-lg text-orange-600 font-medium font-manrope">
@@ -24,9 +39,15 @@ export const IntroSection = () => {
           manageable tasks. This method guarantees that every task gets the
           focus, time, and care it needs.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-9 lg:grid-cols-3 py-30 max-w-[1200px] mx-auto ">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 1, delay: 0.6 }}
+        className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-9 lg:grid-cols-3 py-30 max-w-[1200px] mx-auto "
+      >
         <div className="border space-y-3 border-zinc-400 rounded-xl p-4 md:p-6  text-center  ">
           <Image
             src="/images/individual.png"
@@ -73,10 +94,11 @@ export const IntroSection = () => {
 
           <h3 className="text-xl md:text-2xl font-semibold">Company</h3>
           <p className="text-zinc-600 font-medium">
-            Do you need a professional designer for a contract base to help your company reach their goal?. Well, You found us..
+            Do you need a professional designer for a contract base to help your
+            company reach their goal?. Well, You found us..
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <Image
         src="/images/rec1.png"

@@ -12,7 +12,7 @@ export const Footer = () => {
           <Link href="https://www.behance.net/johnifem" className="text-zinc-600 hover:text-sky-600 text-lg: md:text-xl">Behance</Link>
           <Link href="https://dribbble.com/ifemezuo" className="text-zinc-600 hover:text-sky-600 text-lg: md:text-xl" target="_blank">Dribbble</Link>
           <Link href="https://www.linkedin.com/in/john-ifemezuo/" className="text-zinc-600 hover:text-sky-600 text-lg: md:text-xl" target="_blank">Linkedin</Link>
-          <Link href="https://johnsinsight.com" className="text-zinc-600 hover:text-sky-600 text-lg: md:text-xl" target="_blank">Blog</Link>
+          {/* <Link href="https://johnsinsight.com" className="text-zinc-600 hover:text-sky-600 text-lg: md:text-xl" target="_blank">Blog</Link> */}
         </div>
       </div>
 

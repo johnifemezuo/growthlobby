@@ -1,16 +1,27 @@
 import { faqsData } from "@/base/data/faqs";
+import { useAnimateEase } from "@/base/utils/useAnimateEase";
 import { PointIcon } from "@/components/Global/Icons/PointIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { BookACallCard } from "./BookACallCard";
 import { Faq } from "./Faq";
 
 export const FaqSection = () => {
+  const { ref, easeInVariant, mainControls } = useAnimateEase();
+
   return (
     <div
+      ref={ref}
       id="about"
       className="bg-[#FAF8F4] overflow-hidden rounded-3xl h-auto mt-6 py-12 px-4 md:p-8 lg:py-20 md:mt-5 relative lg:px-14 xl:px-20"
     >
-      <div className="lg:flex lg:space-x-12 justify-between mx-auto relative z-10 ">
+      <motion.div
+        variants={easeInVariant}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="lg:flex lg:space-x-12 justify-between mx-auto relative z-10 "
+      >
         <div className="space-y-4 relative lg:space-y-6   max-w-[600px] mx-aut text-white">
           <p className="flex items-center space-x-2 ">
             <PointIcon />
@@ -28,7 +39,7 @@ export const FaqSection = () => {
         </div>
 
         <BookACallCard />
-      </div>
+      </motion.div>
 
       <Image
         src="/images/rec11.png"
