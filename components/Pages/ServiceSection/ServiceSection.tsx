@@ -49,7 +49,7 @@ export const ServiceSection = () => {
           className="xl:-rotate-[15deg]"
         />
         <ServiceCard
-          tag="Prototype"
+          tag="Developement"
           title="Mobile app design."
           description="We design, refine, and make your app shine above the competition."
           image="/images/serv2.png"

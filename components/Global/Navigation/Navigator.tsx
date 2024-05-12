@@ -44,8 +44,8 @@ export const Navigation = () => {
         isOpen ? "rounded-lg " : "rounded-full"
       }`}
     >
-      {isOpen && (
-        <div className="items-center justify-between md:flex pt-2 md:pt-0">
+      
+        <div className={`${isOpen ? "block" : "hidden"} items-center justify-between md:flex pt-2 md:pt-0`}>
           <Link href="/#hero" className="-mb-1 ml-3 md:ml-0">
             <button>
               <TabLogo />
@@ -71,7 +71,6 @@ export const Navigation = () => {
             active={pathname === "#intro"}
           />
         </div>
-      )}
 
       <button
         onClick={() => setIsOpen(!isOpen)}
