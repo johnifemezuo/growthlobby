@@ -76,7 +76,7 @@ export const WorksSection = () => {
         />
 
         <Link
-          href="https://www.figma.com/proto/ZUPoSez0NQptvd2eXIL8mY/Growthlobby-Projects?page-id=0%3A1&type=design&node-id=10-2&viewport=742%2C292%2C0.03&t=xEs3sqar595CAJ5Q-1&scaling=min-zoom&starting-point-node-id=10%3A2&mode=design"
+          href="https://www.figma.com/proto/ZUPoSez0NQptvd2eXIL8mY/Growthlobby-Projects?page-id=0%3A1&type=design&node-id=10-2&viewport=-12093%2C661%2C0.39&t=9F6gYc9fy2EH34JJ-1&scaling=min-zoom&starting-point-node-id=10%3A2&mode=design"
           target="_blank"
         >
           <div className="rounded-2xl relative overflow-hidden group h-[250px] md:h-[350px] bg-red-50">
