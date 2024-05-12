@@ -40,13 +40,13 @@ export const Navigation = () => {
 
   return (
     <div
-      className={`z-50  md:mx-auto bg-black/80 md:rounded-full  py-3 md:max-w-[670px] px-3  fixed bottom-8 left-3 md:inset-x-0 ${
+      className={`z-50  md:mx-auto bg-black/80 md:rounded-full  py-3 md:max-w-[670px] px-3  fixed bottom-5 left-3 md:inset-x-0 ${
         isOpen ? "rounded-lg " : "rounded-full"
       }`}
     >
       {isOpen && (
-        <div className="items-center justify-between md:flex">
-          <Link href="/#hero" className="-mb-1 hidden md:block">
+        <div className="items-center justify-between md:flex pt-2 md:pt-0">
+          <Link href="/#hero" className="-mb-1 ml-3 md:ml-0">
             <button>
               <TabLogo />
             </button>
