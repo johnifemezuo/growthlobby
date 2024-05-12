@@ -10,7 +10,7 @@ const NavLink = ({ name, link }: { name: string; link: string }) => {
       spy={true}
       smooth={true}
       duration={500}
-      className="capitalize w-[180px] md:w-auto block text-white cursor-pointer md:ml-0 rounded-3xl py-2.5 md:py-2 px-4  transition-all duration-300"
+      className="capitalize w-[180px] md:w-auto text-sm block text-white cursor-pointer md:ml-0 rounded-3xl py-2.5 md:py-2 px-4  transition-all duration-300"
       activeClass="bg-white/30"
     >
       {name}
@@ -23,7 +23,7 @@ export const Navigation = () => {
 
   return (
     <div
-      className={`z-50  md:mx-auto bg-black/90 md:rounded-full  py-3 md:max-w-[670px] px-3  fixed bottom-5 left-3 md:inset-x-0 ${
+      className={`z-50  md:mx-auto bg-black/90 md:rounded-full  py-2 md:max-w-[600px] px-3  fixed bottom-5 left-3 md:inset-x-0 ${
         isOpen ? "rounded-xl " : "rounded-full"
       }`}
     >
@@ -37,7 +37,7 @@ export const Navigation = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="-mb-1 ml-3 md:ml-0"
+          className="-mb-1 ml-3 md:ml-0 "
           activeClass="hero"
         >
           <button>
@@ -55,7 +55,7 @@ export const Navigation = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white w-8 h-8 md:hidden px-1"
+        className="text-white w-8 h-8 md:hidden px-1 mt-3"
       >
         {isOpen ? (
           <svg
