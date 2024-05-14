@@ -5,7 +5,7 @@ import { HeroCard } from "./HeroCard";
 
 export const HeroSection = () => {
   return (
-    <div className="bg-[#F2F5F1] overflow-hidden rounded-3xl min-h-screen mt-6 md:mt-5 relative">
+    <div className="bg-[#F2F5F1] overflow-hidden rounded-3xl min-h-screen mt-6 md:mt-5 ">
       <div className="text-center px-4 md:px-20 lg:px-44 py-20 md:py-12 lg:py-20 relative space-y-5">
         <motion.div
           initial={{
@@ -59,7 +59,7 @@ export const HeroSection = () => {
           </h1>
           <p className="text-base  md:text-lg lg:text-xl text-zinc-700 font-manrope">
             Skip the ugly hiring process and unpredictable costs. Get on demand
-            high-quality design. Unlimited requests for monthly fee. It&apos;s
+            high-quality designs and a developer for your projects.
             as simple as that!
           </p>
 

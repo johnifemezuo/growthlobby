@@ -6,12 +6,14 @@ import { DealsSection } from "./DealsSection/DealsSection";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { FaqSection } from "./FaqSection/FaqSection";
 import { ContactUs } from "./ContactUs/ContactUs";
+import { HowWeDoIt } from "./HowWeDoIt/HowWeDoIt";
 
 export const HomePageIndex = () => {
   return (
     <div>
       <HeroSection />
       <IntroSection />
+      <HowWeDoIt />
       <ServiceSection />
       <WorksSection />
       <DealsSection />

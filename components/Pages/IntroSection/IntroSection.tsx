@@ -31,7 +31,7 @@ export const IntroSection = () => {
           Basically Everyone who needs to grow their business, team or agency
         </h1>
         <p className="text-base md:text-lg text-orange-600 font-medium font-manrope">
-          It&apos;s simple. You request, we design or build, Together!
+          It&apos;s simple. You request, we design and build, Together!
         </p>
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
           We begin each project by attentively listening to grasp your
@@ -48,7 +48,7 @@ export const IntroSection = () => {
         transition={{ duration: 1, delay: 0.6 }}
         className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-9 lg:grid-cols-3 py-30 max-w-[1200px] mx-auto "
       >
-        <div className="border space-y-3 border-zinc-400 rounded-xl p-4 md:p-6  text-center  ">
+        <div className="border space-y-3 border-zinc-300 rounded-3xl p-4 md:p-6  text-center  ">
           <Image
             src="/images/individual.png"
             width={150}
@@ -67,7 +67,7 @@ export const IntroSection = () => {
           </p>
         </div>
 
-        <div className="border space-y-3 border-zinc-400 rounded-xl p-4 md:p-6  text-center  ">
+        <div className="border space-y-3 border-zinc-300 rounded-3xl p-4 md:p-6  text-center  ">
           <Image
             src="/images/agency.png"
             width={150}
@@ -83,7 +83,7 @@ export const IntroSection = () => {
           </p>
         </div>
 
-        <div className="border space-y-3 border-zinc-400 rounded-xl p-4 md:p-6  text-center  ">
+        <div className="border space-y-3 border-zinc-300 rounded-3xl p-4 md:p-6  text-center  ">
           <Image
             src="/images/company.png"
             width={150}

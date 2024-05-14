@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 export const useAnimateEase = () => {
   const easeInVariant = {
-    hidden: { y: 120, opacity: 0 },
+    hidden: { y: 200, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
 

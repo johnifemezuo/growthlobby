@@ -17,7 +17,7 @@ export const ServiceSection = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="space-y-4 relative lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl relative z-10 mx-auto lg:px-44"
+        className="space-y-4  lg:space-y-6 py-12 md:py-20  md:px-12 text-center max-w-5xl relative z-10 mx-auto lg:px-44"
       >
         <p className="flex items-center space-x-2 justify-center">
           <PointIcon />
@@ -26,12 +26,12 @@ export const ServiceSection = () => {
           </span>
         </p>
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl farro-bold relative">
-          We provide both design and web solutions to our client
+          We provide both design and website development service to our client
         </h1>
 
         <p className="text-base md:text-lg text-zinc-800 font-medium font-manrope">
-          Your go-to solution for your web and mobile apps design needs, like
-          many founders, startups, and agencies do
+          Your go-to solution for your website and mobile apps design needs, like
+          many founders, startups, and agencies do.
         </p>
       </motion.div>
 
@@ -40,16 +40,16 @@ export const ServiceSection = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.7, delay: 0.6 }}
-        className="grid  gap-4 md:gap-6  xl:grid-cols-3 py-30  lg:max-w-[1300px] mx-auto ">
+        className="grid  gap-4 md:gap-6  md:grid-cols-2 py-30   mx-auto  lg:max-w-[1000px]"
+      >
         <ServiceCard
           tag="Prototype"
           title="Website Design"
           description="We design sleek and user friendly websites for any need using figma."
           image="/images/serv1.png"
-          className="xl:-rotate-[15deg]"
         />
         <ServiceCard
-          tag="Developement"
+          tag="Prototype"
           title="Mobile app design."
           description="We design, refine, and make your app shine above the competition."
           image="/images/serv2.png"
@@ -57,33 +57,23 @@ export const ServiceSection = () => {
         />
         <ServiceCard
           tag="Prototype"
+          title="Web apps."
+          description="We design sleek and responsive web apps for any business challenge."
+          image="/images/img12.png"
+        />
+        <ServiceCard
+          tag=" Development"
           title="Website Development"
           description="We build all kind of  sleek  and responsive website for any business challenge."
           image="/images/serv3.png"
-          className="xl:rotate-[15deg]"
         />
-      </motion.div>
 
-      <motion.div
-        variants={easeInVariant}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.7, delay: 0.9 }} className="grid xl:flex gap-4 md:gap-6 w-full xl:justify-center  mt-6 xl:max-w-4xl xl:mt-28 py-30 xl:space-x-20 mx-auto space-y-2  md:space-y-0">
-        <ServiceCard
+        {/* <ServiceCard
           tag="Development"
           title="Mobile development"
           description="We also build the  front end  of the mobile app designs."
           image="/images/serv4.png"
-          className=" xl:-rotate-[15deg]"
-        />
-
-        <ServiceCard
-          tag="Development"
-          title="Web apps."
-          description="We design and build any kind of responsive web apps for any business challenge."
-          image="/images/img12.png"
-          className="xl:rotate-[15deg]"
-        />
+        /> */}
       </motion.div>
 
       <Image
