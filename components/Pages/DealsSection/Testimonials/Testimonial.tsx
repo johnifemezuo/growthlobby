@@ -12,7 +12,7 @@ export const Testimonial = ({name, title, message, profilePics}:{ name: string, 
             alt=""
             width={200}
             height={200}
-            className="object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
         <div>

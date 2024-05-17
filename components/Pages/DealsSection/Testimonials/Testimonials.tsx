@@ -1,38 +1,27 @@
-import { ArrowIcon } from "@/components/Global/Icons/ArrowIcon";
-import { useEffect, useRef, useState } from "react";
-import { Testimonial } from "./Testimonial";
 import { testimonials } from "@/base/data/testimonialData";
+import { useSelectedSnapDisplay } from "@/base/utils/useSelectedSnapDisplay";
+import { ArrowIcon } from "@/components/Global/Icons/ArrowIcon";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback } from "react";
+import { Testimonial } from "./Testimonial";
 
 export const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef<any>(null);
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: "center" },
+    // eslint-disable-next-line new-cap
+    [Autoplay()]
+  );
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 6000);
+  const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi as any);
 
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
+  const handlePrevClick = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
-  const handlePrevClick = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
-  const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-
-
-  useEffect(() => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft =
-        carouselRef.current.clientWidth * currentIndex;
-    }
-  }, [currentIndex]);
+  const handleNextClick = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   return (
     <div className="flex flex-col w-full items-center mt-20">
@@ -40,21 +29,23 @@ export const Testimonials = () => {
         What our clients have to say
       </h1>
 
-      <div ref={carouselRef} className="flex lg:overflow-x-hidden mx-auto  overflow-x-scroll  w-full snap-x md:max-w-[700px]">
-        {testimonials.map((testimony, index) => (
-          <div
-            key={index}
-            className="flex-none snap-start space-x-4 lg:space-x-32 md:px-6 w-full"
-            style={{ scrollSnapAlign: "start" }}
-          >
-            <Testimonial
-              title={testimony.title}
-              message={testimony.message}
-              name={testimony.name}
-              profilePics={testimony.profilePics}
-            />``
-          </div>
-        ))}
+      <div ref={emblaRef} className="flex overflow-x-hidden">
+        <div className="mt-6 md:mt-12 flex space-x-4 md:space-x-6 px-5 ">
+          {testimonials.map((testimony, index) => (
+            <div
+              key={index}
+              className="flex-none snap-start space-x-4 lg:space-x-32 md:px-6 w-full"
+              style={{ scrollSnapAlign: "start" }}
+            >
+              <Testimonial
+                title={testimony.title}
+                message={testimony.message}
+                name={testimony.name}
+                profilePics={testimony.profilePics}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="flex items-center space-x-4 pt-4">
@@ -66,7 +57,8 @@ export const Testimonials = () => {
         </button>
 
         <div className="text-white px-4">
-            <span >{currentIndex + 1}</span> / <span className="text-white/50">{testimonials.length}</span>
+          <span>{selectedSnap + 1}</span> /{" "}
+          <span className="text-white/50">{snapCount}</span>
         </div>
 
         <button
