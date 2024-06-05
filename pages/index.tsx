@@ -33,7 +33,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Growthlobby : A software/website/mobile frontend design and development agency."
+          content="Growthlobby : A product design and website development agency."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link

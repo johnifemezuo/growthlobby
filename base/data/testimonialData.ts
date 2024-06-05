@@ -26,6 +26,6 @@ const testimonials = [
     message:
       "John was incredible. He delivered all my deliverables on time and was very proactive, helping me make suggestions and explaining everything I got confused with. I'd recommend him ten times again.",
     name: "Gloria Chimelu",
-    profilePics: "/images/rec11.png",
+    profilePics: "/images/glory-exportpadi.jpg",
   },
 ];
